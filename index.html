@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Music Platform</h1>
+        <nav>
+            <ul>
+                <li><button id="btnLogin">Login</button></li>
+                <li><button id="btnRegister">Register</button></li>
+                <li><button id="btnExplore">Explore</button></li>
+                <li><button id="btnPlaylists">Playlists</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="loginSection" class="hidden">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" required><br><br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="registerSection" class="hidden">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="registerUsername">Username:</label>
+            <input type="text" id="registerUsername" required><br><br>
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" required><br><br>
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" required><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <section id="exploreSection" class="hidden">
+        <h2>Explore Music</h2>
+        <div id="musicList" class="music-container"></div>
+    </section>
+
+   <section id="playlistsSection" class="hidden">
+    <h2>My Playlists</h2>
+    <div id="playlistsList"></div>
+</section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
